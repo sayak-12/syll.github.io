@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syllabus for this semester</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Alegreya+SC&family=Alegreya+Sans+SC:wght@300;400&family=Barlow:wght@300&family=Bebas+Neue&family=Kanit:wght@500&family=Lato:wght@300;400;700&family=Poppins:wght@200;300;400;500;600&family=Secular+One&display=swap');
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            font-size: 62.5%;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ebf5fc;
+        }
+
+        .logo {
+            height: 6.5rem;
+            width: 6.5rem;
+            border-radius: 50%;
+            position: absolute;
+            top: 4.0rem;
+            left: 4.0rem;
+            box-shadow: 0rem 0rem .2rem #5f5f5f, 0rem 0rem 0rem .5rem #ecf0f3, .8rem .8rem 1.5rem #a7aaaf, -.8rem -.8rem 1.5rem white;
+        }
+
+        .head {
+            font-family: 'Alegreya Sans SC', sans-serif;
+            font-size: 3.6rem;
+            position: absolute;
+            top: 4.0rem;
+            left: 12.0rem;
+        }
+
+        .subhead {
+            font-family: 'Alegreya Sans SC', sans-serif;
+            font-size: 1.5rem;
+            position: absolute;
+            top: 8.5rem;
+            left: 12.0rem;
+            letter-spacing: 0.2rem;
+        }
+
+        .container {
+            display: flex;
+            width: 96%;
+            justify-content: space-evenly;
+            height: 100.0rem;
+            align-items: center;
+            flex-wrap: wrap;
+            flex-direction: row;
+
+        }
+        
+            
+        .card {
+            display: flex;
+            width: 25%;
+            height: 45.0rem;
+            padding: 2.0rem;
+            background-color: #ebf5fc;
+            margin: 2.0rem;
+            flex-direction: row;
+            overflow: hidden;
+            justify-content: center;
+            flex-wrap: wrap;
+            position: relative;
+            top: 14.0rem;
+            border-radius: 3.5rem;
+            box-shadow: -.6rem -.6rem 2.0rem rgba(255, 255, 255, 1), .6rem .6rem 2.0rem rgba(0, 0, 0, 0.1);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            box-shadow: inset -.6rem -.6rem 2.0rem rgba(255, 255, 255, 1), inset .6rem .6rem 2.0rem rgba(0, 0, 0, 0.15);
+        }
+
+        img[alt=""] {
+            height: 20.0rem;
+            width: 26.0rem;
+        }
+
+        ul {
+            display: flex;
+            position: absolute;
+            top: 150.0rem;
+            left: 48%;
+            transform: translate(-50%, -50%);
+        }
+
+        ul li {
+            list-style: none;
+        }
+
+        ul li a {
+            width: 8.0rem;
+            height: 8.0rem;
+            background-color: #ebf5fc;
+            text-align: center;
+            line-height: 8.0rem;
+            font-size: 3.5rem;
+            margin: 0 1.0rem;
+            display: block;
+            border-radius: 50%;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            box-shadow: -.6rem -.6rem 2.0rem rgba(255, 255, 255, 1), .6rem .6rem 2.0rem rgba(0, 0, 0, 0.1);
+            margin-bottom: 2.5rem;
+            cursor: pointer;
+        }
+
+        ul li a:hover {
+            box-shadow: inset -.6rem -.6rem 2.0rem rgba(255, 255, 255, 1), inset .6rem .6rem 2.0rem rgba(0, 0, 0, 0.2);
+        }
+
+        ul li a .icon {
+            position: relative;
+            color: #262626;
+            transition: .5s;
+            z-index: 3;
+        }
+
+        .footer {
+            width: 120.0rem;
+            height: 35.0rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 115.0rem;
+            z-index: 4;
+        }
+
+        .pic {
+            display: flex;
+            box-shadow: 0rem 0rem .2rem #5f5f5f, 0rem 0rem 0rem .5rem #ecf0f3, .8rem .8rem 1.5rem #a7aaaf, -.8rem -.8rem 1.5rem white;
+            min-height: 25.0rem;
+            max-width: 20.0rem;
+            position: relative;
+            top: -4.5rem;
+        }
+
+        .gb {
+            font-family: 'Alegreya Sans SC', sans-serif;
+            position: relative;
+            top: -2.5rem;
+            font-size: 1.8rem;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+
+        p {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 3.5rem;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+        }
+
+        .btn {
+            text-decoration: none;
+            font-family: 'Bebas Neue', cursive;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            letter-spacing: 0.4em;
+            font-size: 1.5rem;
+            color: black;
+            position: relative;
+            top: 3.5rem;
+            background-color: #ebf5fc;
+            box-shadow: -.6rem -.6rem 2.0rem rgba(255, 255, 255, 1), .6rem .6rem 2.0rem rgba(0, 0, 0, 0.1);
+            padding: 1.0rem 5.0rem 1.0rem 5.0rem;
+            border-radius: 4.0rem;
+            
+        }
+
+        .btn:hover {
+            box-shadow: inset -.6rem -.6rem 2.0rem rgba(255, 255, 255, 1), inset .6rem .6rem 2.0rem rgba(0, 0, 0, 0.2);
+        }
+        @media(max-width:998px){
+            html{
+                font-size: 55%;
+            }
+        }
+        @media(max-width:768px){
+            html{
+                font-size: 45%;
+            }
+        }
+        @media(max-width:650px){
+            html{
+                font-size: 40%;
+            }
+        }
+        @media(max-width:360px){
+            html{
+                font-size: 30%;
+            }
+            .btn{
+                padding: 1.0rem 4.0rem 1.0rem 4.0rem;
+            }
+            .gb{
+                font-size: 1.3rem;
+            }
+        }
+    </style>
+    <div class="title">
+        <img src="marvel-avengers-wallpaper.jpg" alt="nnn" class="logo">
+        <h3 class="head">Syllabus for this semester</h3>
+        <h2 class="subhead">Semester: 2nd | stream CSE IoT | B.Tech 1st year</h2>
+    </div>
+    <div class="container">
+        <div class="card">
+            <div class="imgbox">
+                <img src="math.jpg" alt="" class="maths">
+            </div>
+            <div class="contentmaths">
+                <p>Mathematics</p>
+                <a href="https://drive.google.com/drive/folders/19dLJSBXgs5F5dnJw8KJMzc0eo6SGjSlj?usp=sharing" class="btn" target="_blank">Go To Course</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgbox">
+                <img src="13651567.jpg" alt="" class="phys">
+            </div>
+            <div class="contentphys">
+                <p>Physics</p>
+                <a href="https://drive.google.com/drive/u/1/folders/1dQpr4DXK2KUAPRAaT_NPaMfctTiAc3Sg" target="_blank" class="btn">Go To
+                    Course</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgbox">
+                <img src="Car service and repairing equipment flat modern design.jpg" alt="" class="mechs">
+            </div>
+            <div class="contentmechs">
+                <p>Mechanics</p>
+                <a href="https://drive.google.com/drive/folders/1t9TrgoFxAfv85vhR0ndovI1pAQQ1xqIB?usp=sharing" target="_blank" class="btn">Go To Course</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgbox">
+                <img src="esp.jpg" alt="" class="esp">
+            </div>
+            <div class="contentesp">
+                <p>ESP-II</p>
+                <a href="https://drive.google.com/drive/folders/1ekhIPZ972h-Y41ZW-XtCuXjEquE8MFjU?usp=sharing" target="_blank"
+                    class="btn">Go To Course</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgbox">
+                <img src="sdp.jpg" alt="" class="sdp">
+            </div>
+            <div class="contentsdp">
+                <p>SDP-II</p>
+                <a href="https://drive.google.com/drive/folders/1ekhIPZ972h-Y41ZW-XtCuXjEquE8MFjU?usp=sharing" target="_blank"
+                    class="btn">Go To Course</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgbox">
+                <img src="cpp.jpg" alt="" class="cpp">
+            </div>
+            <div class="contentcpp">
+                <p>C Programming</p>
+                <a href="https://drive.google.com/drive/folders/1o8Ig4I26fPs1kl9823pbQZ_Vfj3l2MKg?usp=sharing" target="_blank" class="btn">Go To Course</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <img src="pic.jpg" alt="" class="pic">
+        <h3 class="gb">A website created by Sayak Raha, student of University of Engineering and management Kolkata,
+            B.Tech CSE IoT 1st year</h3>
+    </div>
+    <ul>
+        <li>
+            <a href="https://www.facebook.com/sayak.raha.3" target="_blank">
+                <i class="fab fa-facebook-f icon"></i> </a>
+        </li>
+        <li>
+            <a href="https://twitter.com/RahaSayak" target="_blank"><i class="fab fa-twitter icon"></i></a>
+        </li>
+        <li>
+            <a href="https://www.linkedin.com/in/sayak-raha-476129224/" target="_blank"><i
+                    class="fab fa-linkedin-in icon"></i></a>
+        </li>
+        <li>
+            <a href="https://humornama.com/wp-content/uploads/2020/11/Kaisa-Laga-Mera-Mazak-meme-template-of-Sunil-Grover.jpg"
+                target="_blank"><i class="fab fa-google-plus-g icon"></i></a>
+        </li>
+
+</body>
+
+</html>
